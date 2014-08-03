@@ -26,14 +26,13 @@ iframe.google-map {
   max-width: 250px;
   display: inline-block;
   margin: 0px 0px 10px 0px;
-  padding: 3px;
-  border: solid 1px;
+  padding: 2px;
+  border: solid 2px;
 }
 
 .weekly-schedule span.time {
   width: 100%;
-  background-color: #999;
-  color: white;
+  background-color: #F8EA19;
   padding: 2px;
   display: block;
 }
