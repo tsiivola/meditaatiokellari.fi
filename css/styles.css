@@ -21,6 +21,10 @@ iframe.google-map {
   border: 0;
 }
 
+.weekly-schedule {
+  max-width: 600px;
+}
+
 .weekly-schedule li {
   width: 100%;
   max-width: 250px;
