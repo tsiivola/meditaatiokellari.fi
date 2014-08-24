@@ -4,9 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meditaatiokellari</title>
-  <link rel="stylesheet" href="css/app.css" />
   <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/app.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
 </head>
 <body>
 
@@ -76,11 +77,11 @@
 <div class="row">
   <div class="small-12columns">
     <h2>Kuvia</h2>
-    <a class="th" href="img/meditaatiokellari_olohuone_varikorjattu_1024x683.jpg">
-      <img src="img/meditaatiokellari_olohuone_th.jpg" alt="Meditaatiokellarin olohuone">
+    <a class="th image-popup" href="img/meditaatiokellari_olohuone_varikorjattu_1024x683.jpg" title="Meditaatiokellarin olohuone">
+      <img src="img/meditaatiokellari_olohuone_th.jpg" alt="Meditaatiokellarin olohuone" alt="Meditaatiokellarin olohuone">
     </a>
-    <a class="th" href="img/meditaatiokellari_sali_varikorjattu_1024x683.jpg">
-      <img src="img/meditaatiokellari_sali_th.jpg" alt="Meditaatiokellarin meditaatiosali">
+    <a class="th image-popup" href="img/meditaatiokellari_sali_varikorjattu_1024x683.jpg" title="Meditaatiokellarin meditaatiosali">
+      <img src="img/meditaatiokellari_sali_th.jpg" alt="Meditaatiokellarin meditaatiosali" alt="Meditaatiokellarin meditaatiosali">
     </a>
   </div>
 </div>
@@ -90,6 +91,15 @@
       <hr/>
     </div> 
   </footer>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script>
+$('.image-popup').magnificPopup({
+  type: 'image',
+  closeOnContentClick: true
+});
+</script>
    
 </body>
 </html>
