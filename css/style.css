@@ -1,0 +1,371 @@
+/*-------------------------------------------------------------------------------
+    __  ___         ___ __              __  _       __        ____           _ 
+   /  |/  /__  ____/ (_) /_____ _____ _/ /_(_)___  / /_____  / / /___ ______(_)
+  / /|_/ / _ \/ __  / / __/ __ `/ __ `/ __/ / __ \/ //_/ _ \/ / / __ `/ ___/ / 
+ / /  / /  __/ /_/ / / /_/ /_/ / /_/ / /_/ / /_/ / ,< /  __/ / / /_/ / /  / /  
+/_/  /_/\___/\__,_/_/\__/\__,_/\__,_/\__/_/\____/_/|_|\___/_/_/\__,_/_/  /_/  
+
+--------------------------------------------------------------------------------*/
+@import url('foundation.css');
+
+/*------------------------------*/
+/* GENERAL   ༼ つ ◕_◕ ༽つ       */
+/*------------------------------*/
+
+body {
+	background: #97babf;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-family: "Damion","Helvetica",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+    text-rendering: optimizelegibility;
+}
+#wrapper {
+	max-width: 1280px;
+	width: auto;
+	margin: 0 auto;
+	padding: 0 30px;
+	position: relative;
+}
+#main {
+	background: #FFF;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:         0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+	padding: 150px 0 40px;
+	width: 100%;
+	position: relative;
+	overflow: visible;
+}
+.content {
+	padding: 10px 20px;
+}
+/*------------------------------*/
+/* HEADER    ♪┏(°.°)┛┗(°.°)┓♪   */
+/*------------------------------*/
+#header-container {
+	background-color: red;
+	background-size: cover;
+	height: 360px;
+	position: relative;
+	margin: 0 -30px;
+}
+#header-container #header-logo img {
+	display: block;
+	margin: 0 auto;
+	height: 250px;
+	z-index: 2;
+	position: absolute;
+	margin-top: -125px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#header-container #header-parallax li:first-child {
+	right: 300px !important;
+	left: auto !important;
+	z-index: 2;
+}
+#header-container #header-parallax li:first-child img {
+	max-width: none;
+}
+#header-container #header-parallax li:nth-child(2){
+	right: 0;
+	left: auto !important;
+	z-index: 1;
+}
+#header-container #header-parallax li:nth-child(3){
+	z-index: 5;
+	top: 0;
+	bottom: 0;
+	display: table !important;
+	height: 100%;
+	padding-left: 40px;
+}
+#header-container #header-parallax li:nth-child(3) h1{
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0;
+	line-height: 1.1em;
+}
+#header-container #header-parallax li:last-child{
+	z-index: 3;
+}
+#header-container #header-parallax {
+	overflow: hidden;
+	background: url('../img/tausta.png') no-repeat center right;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+#header-container .header-left,
+#header-container .header-right {
+	position: absolute;
+	z-index: 1;
+	border-style:solid;
+	height:0px;
+	width:0px;
+	top: 360px;
+}
+#header-container .header-left {
+	border-width: 0 30px 30px 0;
+	left: 0px;
+	border-color: transparent #404040 transparent transparent;
+}
+#header-container .header-right {
+	border-width: 0 0 30px 30px;
+	right: 0px;
+	border-color: transparent transparent transparent #404040;
+}
+/*------------------------------*/
+/* SCHEDULE     d[-_-]b         */
+/*------------------------------*/
+#viikkoaikataulu {
+	margin: 40px 20px;
+}
+#pallot {
+	list-style: none;
+	margin: 20px 0 20px;
+	text-align: center;
+}
+#pallot li {
+	display: inline-block;
+}
+#pallot li .pallo-outer{
+	display: table;
+	overflow: hidden;
+	height: 150px;
+	width: 150px;
+	margin: 10px 0;
+	overflow: hidden;
+	background-color: #f6f40a;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	transition: box-shadow 0.5s ease;
+}
+#pallot li .pallo-linkki {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #222222;
+}
+#pallot li .pallo-linkki:hover .pallo-outer {
+	-webkit-box-shadow: inset 0px 0px 0px 75px rgba(151, 186, 191, 1);
+	-moz-box-shadow:    inset 0px 0px 0px 75px rgba(151, 186, 191, 1);
+	box-shadow:         inset 0px 0px 0px 75px rgba(151, 186, 191, 1);
+}
+#pallot li .pallo-inner{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+#pallot li .pallo-inner {
+	font-size: 15px;
+}
+#pallot li .pallo-inner span{
+	display: block;
+	line-height: 18px;
+	font-weight: bold;
+}
+/*------------------------------*/
+/* EMBED     ¯\_(ツ)_/¯        */
+/*------------------------------*/
+.google-maps {
+    position: relative;
+    padding-bottom: 35%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#calendar-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+ 
+#calendar-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*------------------------------*/
+/* IMAGES   ᕙ(`▽´)ᕗ            */
+/*------------------------------*/
+.pallokuvat {
+	margin: 20px 0;
+	text-align: justify;
+	width: 100%;
+}
+.pallokuvat::after {
+	width: 100%; display: inline-block; content: "."; visibility: hidden
+}
+.pallokuvat a {
+	width: 30%;
+	padding-bottom: 30%;
+	float: none;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 150px;
+	display: inline-block;
+	border: 5px solid #f6f40a;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	transition: all 1s ease;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray; /* IE 6-9 */;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+.pallokuvat a:hover {
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+	filter: none; /* IE 6-9 */;
+	filter: none;
+}
+/*------------------------------*/
+/* FOOTER   (ಠ_ಠ)               */
+/*------------------------------*/
+.footer {
+	text-align: center;
+	width: 100%;
+	color: #ffffff;
+	padding: 20px 0px 0px 0px;
+
+}
+.footer p a {
+	color: #f6f40a;
+}
+/*------------------------------*/
+/* MEDIA QUERIES (╯°□°）╯︵ ┻━┻ */
+/*------------------------------*/
+@media only screen and (max-width: 40em) {
+	#wrapper {
+		padding: 0 15px;
+	}
+	#main {
+		padding: 80px 0 15px;
+	}
+	.content {
+		padding: 4px 6px;
+	}
+	#header-container {
+		height: 250px;
+		margin: 0 -15px;
+		position: relative;
+	}
+	#header-container #header-logo img {
+		height: 150px;
+		margin-top: -75px;
+	}
+	#header-container .header-left,
+	#header-container .header-right {
+		top: 250px;
+	}
+	#header-container .header-left {
+		border-width: 0 15px 15px 0;
+	}
+	#header-container .header-right {
+		border-width: 0 0 15px 15px;
+	}
+	#header-container #header-content .header-content-outer {
+		height: 250px;
+	}
+	#header-container #header-content .header-content-inner {
+		padding: 0 6px;
+	}
+	#header-container #header-content {
+		width: 300px;
+	}
+	#header-container #header-parallax li:first-child{
+		height: 100%;
+		width: 100%;
+		right: 0 !important;
+		left: -250px !important;
+		top: auto !important;
+		bottom: 0;
+		position: absolute !important;
+	}
+	#header-container #header-parallax li:first-child img{
+		max-height: 100%;
+	}
+	#header-container #header-parallax li:nth-child(2) {
+		right: 0 !important;
+		left: 0 !important;
+		top: auto !important;
+		bottom: 0;
+	}
+	#header-container #header-parallax li:nth-child(3) h1{
+		font-size: 26px;
+	}
+	#header-container #header-parallax li:last-child {
+		right: 0 !important;
+		left: 0 !important;
+		top: auto !important;
+		bottom: 0; 
+	}
+	#viikkoaikataulu {
+		margin: 20px 6px;
+	}
+	.google-maps {
+	    padding-bottom: 75%; // This is the aspect ratio
+	}
+	#calendar-container {
+	    padding-bottom: 75%;
+	}
+	.pallokuvat {
+		margin: 0 0 10px;
+	}
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
